@@ -1,0 +1,132 @@
+.project-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+  
+  .project-detail-card {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 900px;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 80px;
+  }
+  
+  .project-detail-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-detail-content {
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .project-detail-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .project-detail-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .project-detail-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-left: 4px solid #ddd;
+  }
+  
+  .project-not-found {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff4d4d;
+  }
+  
+  /* Tablet & Mobile - Responsive Design */
+  @media (max-width: 1024px) {
+    .project-detail-card {
+      flex-direction: column;
+    }
+  
+    .project-detail-image {
+      width: 100%;
+      border-left: none;
+      border-bottom: 4px solid #ddd;
+    }
+  
+    .project-detail-content h2 {
+      font-size: 2.2rem;
+    }
+  
+    .project-detail-content p {
+      font-size: 1.1rem;
+    }
+  
+    .featured-projects-container h3 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-detail-card {
+      padding: 20px;
+      margin-top: 60px;
+    }
+  
+    .project-detail-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .project-detail-content p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  
+    .featured-projects-container h3 {
+      font-size: 1.5rem;
+    }
+  
+    .featured-projects-container {
+      padding: 30px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-detail-card {
+      width: 90%;
+      margin-top: 40px;
+    }
+  
+    .project-detail-content h2 {
+      font-size: 1.6rem;
+    }
+  
+    .project-detail-content p {
+      font-size: 0.9rem;
+    }
+  
+    .featured-projects-container h3 {
+      font-size: 1.4rem;
+    }
+  }
+  

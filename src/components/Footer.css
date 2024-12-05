@@ -1,0 +1,47 @@
+.custom-footer {
+  background: linear-gradient(45deg, #93073E, #B91A48);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.custom-footer p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.custom-footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.custom-footer .social-icons a {
+  font-size: 1.8rem;
+  color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #000000;
+}
+
+.custom-footer .social-icons i {
+  font-size: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-footer .social-icons i:hover {
+  transform: scale(1.2);
+  color: #000000;
+}

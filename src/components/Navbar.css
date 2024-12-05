@@ -1,0 +1,130 @@
+.custom-navbar {
+  background: linear-gradient(45deg, #93073E, #93073E);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.brand {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #ffffff !important;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  animation: brandAnimation 5s infinite alternate;
+}
+
+@keyframes brandAnimation {
+  0% {
+    transform: scale(1);
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  50% {
+    transform: scale(1.1);
+    color: #f1faee;
+    letter-spacing: 2px;
+  }
+  100% {
+    transform: scale(1);
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff !important;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f1faee !important;
+  transform: scale(1.05);
+}
+
+.custom-toggler {
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%) brightness(2);
+}
+
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(45deg, #93073E, #93073E);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 999;
+  padding-top: 60px;
+  backdrop-filter: none;
+}
+
+.navbar-overlay.show {
+  display: flex;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%) brightness(2);
+}
+
+body.blurred {
+  filter: blur(5px);
+}
+
+@media (min-width: 992px) {
+  .navbar-overlay {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: flex !important;
+  }
+
+  .brand {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: none !important;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .brand {
+    font-size: 1.4rem;
+  }
+}

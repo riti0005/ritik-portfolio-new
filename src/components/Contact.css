@@ -1,0 +1,160 @@
+.contact-page {
+  padding: 50px;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.bg-custom {
+  background: linear-gradient(45deg, #93073E, #93073E);
+}
+
+.btn-gradient {
+  background: linear-gradient(45deg, #af222e, #b12222);
+  color: white;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(45deg, #af222e, #b12222);
+  color: white;
+}
+
+.text-light {
+  color: #f8f9fa;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 10px;
+}
+
+.faq-section {
+  padding: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: #dbcfcf;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background: linear-gradient(45deg, #af222e, #b12222);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #af222e, #b12222);
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #f7c636;
+  box-shadow: 0 0 8px rgba(247, 198, 54, 0.6);
+}
+
+.faq-section .faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-section .faq-question {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.faq-section .faq-answer {
+  font-size: 1rem;
+  color: #dbcfcf;
+}
+
+@media (max-width: 767px) {
+  .contact-page {
+    padding: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  button {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+}

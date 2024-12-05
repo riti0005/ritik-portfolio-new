@@ -1,0 +1,118 @@
+.contact-card {
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .contact-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .contact-card a {
+    color: #93073E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-card a:hover {
+    color: #b12222;
+  }
+  
+  .social-icons {
+    margin: 20px 0;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-icons a img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.1);
+  }
+  
+  .cta-section {
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    animation: slideInUp 1.2s ease-out;
+    transition: transform 0.3s ease;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #ffffff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ccb5b5;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
