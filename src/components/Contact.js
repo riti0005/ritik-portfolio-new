@@ -12,7 +12,7 @@ const Contact = () => {
     message: '',
   });
 
-  const { contactDetails, faq } = contactData;
+  const { faq } = contactData;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
